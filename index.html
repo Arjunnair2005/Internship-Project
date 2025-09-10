@@ -103,26 +103,6 @@
   <footer>
     &copy; 2025 SOFTING. All rights reserved.
   </footer>
-
- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("otnw0tHJYbnHNvzSi"); 
-  })();
-
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm("service_4visd1c", "template_d3sq7rp", this)
-      .then(() => {
-        document.getElementById("thankYouMsg").style.display = "block";
-        this.reset();
-      }, (err) => {
-        document.getElementById("reTryMsg").style.display = "block";
-        console.error(err);
-      });
-  });
-</script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function(){
@@ -151,4 +131,5 @@
 
 
 </body>
+
 </html>
